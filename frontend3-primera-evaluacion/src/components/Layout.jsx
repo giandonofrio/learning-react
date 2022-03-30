@@ -20,16 +20,14 @@ class Layout extends Component {
             this.setState({
               count: this.state.count + 1,
               seleccionPrevia: "A",
-              selecciones: [...this.state.selecciones, "A"],
             });
           } else {
             this.setState({
               count: this.state.count + 2,
               seleccionPrevia: "A",
-              selecciones: [...this.state.selecciones, "A"],
             });
           }
-        } else{
+        } else {
           alert("Fin.");
         }
         break;
@@ -40,13 +38,11 @@ class Layout extends Component {
             this.setState({
               count: this.state.count + 2,
               seleccionPrevia: "B",
-              selecciones: [...this.state.selecciones, "B"],
             });
           } else if (this.state.count) {
             this.setState({
               count: this.state.count + 3,
               seleccionPrevia: "B",
-              selecciones: [...this.state.selecciones, "B"],
             });
           }
         } else {
@@ -58,7 +54,11 @@ class Layout extends Component {
         break;
     }
   };
-
+  componentDidUpdate() {
+    if (this.state.count !== 0) {
+      this.state.selecciones.push(this.state.seleccionPrevia);
+    }
+  }
   render() {
     return (
       <div className="layout">
