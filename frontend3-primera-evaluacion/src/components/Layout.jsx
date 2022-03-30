@@ -29,7 +29,7 @@ class Layout extends Component {
               selecciones: [...this.state.selecciones, "A"],
             });
           }
-        } else {
+        } else{
           alert("Fin.");
         }
         break;
