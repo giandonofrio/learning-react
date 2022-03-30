@@ -1,0 +1,28 @@
+.container-button {
+  height: 83px;
+  display: flex;
+  flex: 1 1;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 40px;
+  background-color: rgb(94, 92, 100);
+  color: rgb(230, 230, 232);
+  border-radius: 50%;
+  margin: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.operator {
+  background-color: rgb(242, 163, 60);
+  color: white;
+}
+.zero {
+  flex: 2;
+  border-radius: 50px;
+}
+.upperRow {
+  background-color: rgb(59, 57, 63);
+}
