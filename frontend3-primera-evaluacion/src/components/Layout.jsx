@@ -58,6 +58,7 @@ class Layout extends Component {
         break;
     }
   };
+
   render() {
     return (
       <div className="layout">
